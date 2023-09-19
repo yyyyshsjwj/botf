@@ -31,7 +31,7 @@ from telethon.tl.functions.messages import GetHistoryRequest
 from telethon.tl.functions.messages import ImportChatInviteRequest
 import requests
 # -
-# - SoUrAy EiInT
+# - SYTHOM TEAM 
 # -
 
 Tepthon1.start()
@@ -46,8 +46,7 @@ bot_usernameeee = '@xnsex21bot'
 
 ownerhmd_id = (int(DEVLOO))
 LOGS = logging.getLogger(__name__)
-DEVS = [6020752531]
-
+DEVS = [1260465030]
 
 
 
@@ -74,13 +73,14 @@ async def join_channel(event):
         pass  
         
         
-       @Tepthon1.on(events.NewMessage(outgoing=False, pattern='.فحص'))
+        
+@Tepthon1.on(events.NewMessage(outgoing=False, pattern='.فحص'))
 async def OwnerStart(event):
     sender = await event.get_sender()
     if sender.id == ownerhmd_id :
         order = await event.reply('**the source is running ⚡️**')
-   
-
+        
+        
 @Tepthon1.on(events.NewMessage(outgoing=False, pattern='/TEST'))
 async def OwnerStart(event):
     sender = await event.get_sender()
@@ -92,21 +92,19 @@ async def OwnerStart(event):
 async def OwnerStart(event):
     sender = await event.get_sender()
     if sender.id == ownerhmd_id :
-        order = await event.reply(**""""  هلاً بك في سورس يلنت لتجميع نقاط 
+        order = await event.reply("""**هلاً بك في سورس يلنت لتجميع نقاط 
 — — — — — — — — — — — — — — — —
 › ‌ اوامر تجميع النقاط (` .م1` )
 › اوامر التحكم التحكم (` .م2 ` )
 › اوامر الرشق وتفعيل ( `.م3`  )
-› لفحص عمل سورس (.فحص )
-› لفحص عمل سورس (.فحص )
-— — — — — — — — — — — — —**"""")
+› لفحص عمل سورس (.فحص )**""")
 
 
-@Tepthon1.on(events.NewMessage(outgoing=False, pattern='.م1'))
+@Tepthon1.on(events.NewMessage(outgoing=False, pattern='.تجميع'))
 async def OwnerStart(event):
     sender = await event.get_sender()
     if sender.id == ownerhmd_id :
-        order = await event.reply(**""""قــائمة جميـع أوامـر التجميع التي تحتاجها 🎞.
+        order = await event.reply("""**قــائمة جميـع أوامـر التجميع التي تحتاجها 🎞.
 — — — — — — — — — — — — —
 `/point1` :  تجميع نقـاط بوت المليار
 `/point2`: تجميع نقـاط بوت الجوكر 
@@ -125,15 +123,14 @@ note : يوزر البوت المطلوب bot ضـع مكان الـ
 note : عدد الثواني second ضـع مكان الـ
 
 note : ننصحك بوضع عدد الثواني 300
-— — — — — — — — — — — — —**"""")
+— — — — — — — — — — — — —**""")
 
-
-@Tepthon1.on(events.NewMessage(outgoing=False, pattern='.م2'))
+@Tepthon1.on(events.NewMessage(outgoing=False, pattern='.تحكم'))
 async def OwnerStart(event):
     sender = await event.get_sender()
     if sender.id == ownerhmd_id :
-        order = await event.reply("""**- قـائمة أوامـر التحكم بالحساب
-
+        order = await event.reply("""**
+- قـائمة أوامـر التحكم بالحساب
 — — — — — — — — — — — — —
 1 - لتحويل آخر رسالة من مستخدم معين او بوت :
 
@@ -148,10 +145,9 @@ note :  قـم بحساب رقـم الزر الشفاف من العدد 0
 — — — — — — — — — — — — —
 𝟒 - لجعل الحساب ينضـم إلـى قـناة او مجموعة
 `/jn + يوزر القـناة او المجموعة `
-— — — — — — — — — — — — —**""")
+— — — — — — — — — — — — — **""")
 
-
-@Tepthon1.on(events.NewMessage(outgoing=False, pattern='.م3'))
+@Tepthon1.on(events.NewMessage(outgoing=False, pattern='.مميزة'))
 async def OwnerStart(event):
     sender = await event.get_sender()
     if sender.id == ownerhmd_id :
@@ -170,7 +166,6 @@ note : موقع الرسالة يعني مثلا إذا كـان الاسم فـ
 𝟒 - لجعل الحساب يغادر قـناة او مجموعة :
 `/lv + يوزر القـناة`**""")
 
-
 @Tepthon1.on(events.NewMessage(outgoing=False, pattern='/notes'))
 async def OwnerStart(event):
     sender = await event.get_sender()
@@ -184,11 +179,10 @@ async def OwnerStart(event):
 3 - اذا كنت تريد تجميع نقـاط بوتات التمويل بطريقـة اعتيادية بدون المحاولة مرة أخرى تلقـائيا يمكن استخدام الأوامـر التالية [point , /point1/ , .....] يمكنك مراجعة الأوامـر فـي القـائمة .تجميع فـي اول قـسمين من القـائمة
 **""")
 
-
 @Tepthon1.on(events.NewMessage(outgoing=True, pattern=".الأوامـر"))
 async def _(event):
       await event.edit("""**
- أوامـر حساب المستخدم 
+〠 أوامـر حساب المستخدم 
 
 • بوت تمويل المليار  - `.تجميع المليار`
 
@@ -201,15 +195,16 @@ async def _(event):
 • فحص السورس      - `.فحص`**""")
 
 
+
 @Tepthon1.on(events.NewMessage(outgoing=True, pattern=r"\.فحص"))
 async def _(event):
     start = datetime.datetime.now()
     await event.edit("**جاري الفحص..**")
     end = datetime.datetime.now()
     ms = (end - start).microseconds / 1000
-    await event.edit(f'''سورس يعمل بنجاح''')
-    
-    @Tepthon1.on(events.NewMessage(outgoing=False, pattern='/point1'))
+    await event.edit(f'''[Hello Source Eiint🪼](t.me/eiint)''')
+
+@Tepthon1.on(events.NewMessage(outgoing=False, pattern='/point1'))
 async def OwnerStart(event):
     sender = await event.get_sender()
     if sender.id == ownerhmd_id:
@@ -233,7 +228,7 @@ async def OwnerStart(event):
                                                     offset_date=None, offset_id=0, max_id=0, min_id=0, add_offset=0, hash=0))
             msgs = list.messages[0]
             if msgs.message.find('لا يوجد قـنوات فـي الوقـت الحالي , قـم بـتجـميع النقـاط بطريقـة مختلفـة') != -1:
-                await Tepthon1.send_message(event.chat_id, f"تم الانتهاء من التجميع ")
+                await Tepthon1.send_message(event.chat_id, f"تم الانتهاء من التجميع | TP")
 
                 break
             url = msgs.reply_markup.rows[0].buttons[0].url
@@ -253,7 +248,7 @@ async def OwnerStart(event):
                 chs += 1
                 await event.edit(f"القـناة رقـم {chs}")
 
-        await Tepthon1.send_message(event.chat_id, "تم الانتهاء من التجميع ")
+        await Tepthon1.send_message(event.chat_id, "تم الانتهاء من التجميع | TP")
         
 @Tepthon1.on(events.NewMessage(outgoing=False, pattern='/point2'))
 async def OwnerStart(event):
@@ -279,7 +274,7 @@ async def OwnerStart(event):
                                                     offset_date=None, offset_id=0, max_id=0, min_id=0, add_offset=0, hash=0))
             msgs = list.messages[0]
             if msgs.message.find('لا يوجد قـنوات فـي الوقـت الحالي , قـم بـتجـميع النقـاط بطريقـة مختلفـة') != -1:
-                await Tepthon1.send_message(event.chat_id, f"تم الانتهاء من التجميع ")
+                await Tepthon1.send_message(event.chat_id, f"تم الانتهاء من التجميع | TP")
 
                 break
             url = msgs.reply_markup.rows[0].buttons[0].url
@@ -299,7 +294,7 @@ async def OwnerStart(event):
                 chs += 1
                 await event.edit(f"القـناة رقـم {chs}")
 
-        await Tepthon1.send_message(event.chat_id, "تم الانتهاء من التجميع ")
+        await Tepthon1.send_message(event.chat_id, "تم الانتهاء من التجميع | TP")
 
 @Tepthon1.on(events.NewMessage(outgoing=False, pattern='/point3'))
 async def OwnerStart(event):
@@ -325,7 +320,7 @@ async def OwnerStart(event):
                                                     offset_date=None, offset_id=0, max_id=0, min_id=0, add_offset=0, hash=0))
             msgs = list.messages[0]
             if msgs.message.find('لا يوجد قـنوات فـي الوقـت الحالي , قـم بـتجـميع النقـاط بطريقـة مختلفـة') != -1:
-                await Tepthon1.send_message(event.chat_id, f"تم الانتهاء من التجميع ")
+                await Tepthon1.send_message(event.chat_id, f"تم الانتهاء من التجميع | TP")
 
                 break
             url = msgs.reply_markup.rows[0].buttons[0].url
@@ -345,7 +340,7 @@ async def OwnerStart(event):
                 chs += 1
                 await event.edit(f"القـناة رقـم {chs}")
 
-        await Tepthon1.send_message(event.chat_id, "تم الانتهاء من التجميع ")
+        await Tepthon1.send_message(event.chat_id, "تم الانتهاء من التجميع | TP")
 
 @Tepthon1.on(events.NewMessage(outgoing=False, pattern='/point4'))
 async def OwnerStart(event):
@@ -371,7 +366,7 @@ async def OwnerStart(event):
                                                     offset_date=None, offset_id=0, max_id=0, min_id=0, add_offset=0, hash=0))
             msgs = list.messages[0]
             if msgs.message.find('لا يوجد قـنوات فـي الوقـت الحالي , قـم بـتجـميع النقـاط بطريقـة مختلفـة') != -1:
-                await Tepthon1.send_message(event.chat_id, f"تم الانتهاء من التجميع ")
+                await Tepthon1.send_message(event.chat_id, f"تم الانتهاء من التجميع | TP")
 
                 break
             url = msgs.reply_markup.rows[0].buttons[0].url
@@ -391,7 +386,7 @@ async def OwnerStart(event):
                 chs += 1
                 await event.edit(f"القـناة رقـم {chs}")
 
-        await Tepthon1.send_message(event.chat_id, "تم الانتهاء من التجميع ")
+        await Tepthon1.send_message(event.chat_id, "تم الانتهاء من التجميع | TP")
         
 @Tepthon1.on(events.NewMessage(outgoing=True, pattern=".تجميع المليار"))
 async def _(event):
@@ -415,7 +410,7 @@ async def _(event):
                                                offset_date=None, offset_id=0, max_id=0, min_id=0, add_offset=0, hash=0))
         msgs = list.messages[0]
         if msgs.message.find('لا يوجد قـنوات فـي الوقـت الحالي , قـم بـتجـميع النقـاط بطريقـة مختلفـة') != -1:
-            await Tepthon1.send_message(event.chat_id, f"**تم الانتهاء من التجميع **")
+            await Tepthon1.send_message(event.chat_id, f"**تم الانتهاء من التجميع | TP**")
 
             break
         url = msgs.reply_markup.rows[0].buttons[0].url
@@ -434,7 +429,7 @@ async def _(event):
             await msg2[0].click(text='التالي')
             chs += 1
             await event.edit(f"**القـناة رقـم {chs}**")
-    await Tepthon1.send_message(event.chat_id, "**تم الانتهاء من التجميع **")
+    await Tepthon1.send_message(event.chat_id, "**تم الانتهاء من التجميع | TP**")
     
     
     
@@ -460,7 +455,7 @@ async def _(event):
                                                offset_date=None, offset_id=0, max_id=0, min_id=0, add_offset=0, hash=0))
         msgs = list.messages[0]
         if msgs.message.find('لا يوجد قـنوات فـي الوقـت الحالي , قـم بـتجـميع النقـاط بطريقـة مختلفـة') != -1:
-            await Tepthon1.send_message(event.chat_id, f"**تم الانتهاء من التجميع **")
+            await Tepthon1.send_message(event.chat_id, f"**تم الانتهاء من التجميع | TP**")
 
             break
         url = msgs.reply_markup.rows[0].buttons[0].url
@@ -479,7 +474,7 @@ async def _(event):
             await msg2[0].click(text='التالي')
             chs += 1
             await event.edit(f"**القـناة رقـم {chs}**")
-    await Tepthon1.send_message(event.chat_id, "**تم الانتهاء من التجميع **")
+    await Tepthon1.send_message(event.chat_id, "**تم الانتهاء من التجميع | TP**")
 
 @Tepthon1.on(events.NewMessage(outgoing=True, pattern=".تجميع العقـاب"))
 async def _(event):
@@ -503,7 +498,7 @@ async def _(event):
                                                offset_date=None, offset_id=0, max_id=0, min_id=0, add_offset=0, hash=0))
         msgs = list.messages[0]
         if msgs.message.find('لا يوجد قـنوات فـي الوقـت الحالي , قـم بـتجـميع النقـاط بطريقـة مختلفـة') != -1:
-            await Tepthon1.send_message(event.chat_id, f"**تم الانتهاء من التجميع **")
+            await Tepthon1.send_message(event.chat_id, f"**تم الانتهاء من التجميع | TP**")
 
             break
         url = msgs.reply_markup.rows[0].buttons[0].url
@@ -522,7 +517,7 @@ async def _(event):
             await msg2[0].click(text='التالي')
             chs += 1
             await event.edit(f"**القـناة رقـم {chs}**")
-    await Tepthon1.send_message(event.chat_id, "**تم الانتهاء من التجميع **")
+    await Tepthon1.send_message(event.chat_id, "**تم الانتهاء من التجميع | TP**")
 
 
 @Tepthon1.on(events.NewMessage(outgoing=True, pattern=".تجميع العرب"))
@@ -547,7 +542,7 @@ async def _(event):
                                                offset_date=None, offset_id=0, max_id=0, min_id=0, add_offset=0, hash=0))
         msgs = list.messages[0]
         if msgs.message.find('لا يوجد قـنوات فـي الوقـت الحالي , قـم بـتجـميع النقـاط بطريقـة مختلفـة') != -1:
-            await Tepthon1.send_message(event.chat_id, f"**تم الانتهاء من التجميع **")
+            await Tepthon1.send_message(event.chat_id, f"**تم الانتهاء من التجميع | TP**")
 
             break
         url = msgs.reply_markup.rows[0].buttons[0].url
@@ -566,7 +561,7 @@ async def _(event):
             await msg2[0].click(text='التالي')
             chs += 1
             await event.edit(f"**القـناة رقـم {chs}**")
-    await Tepthon1.send_message(event.chat_id, "**تم الانتهاء من التجميع **")
+    await Tepthon1.send_message(event.chat_id, "**تم الانتهاء من التجميع | TP**")
 
 
 ##########################################
@@ -596,7 +591,7 @@ async def OwnerStart(event):
                                                     offset_date=None, offset_id=0, max_id=0, min_id=0, add_offset=0, hash=0))
             msgs = list.messages[0]
             if msgs.message.find('لا يوجد قـنوات فـي الوقـت الحالي , قـم بـتجـميع النقـاط بطريقـة مختلفـة') != -1:
-                await Tepthon1.send_message(event.chat_id, f"تم الانتهاء من التجميع ")
+                await Tepthon1.send_message(event.chat_id, f"تم الانتهاء من التجميع | TP")
 
                 break
             url = msgs.reply_markup.rows[0].buttons[0].url
@@ -616,7 +611,7 @@ async def OwnerStart(event):
                 chs += 1
                 await event.edit(f"القـناة رقـم {chs}")
 
-        await Tepthon1.send_message(event.chat_id, "تم الانتهاء من التجميع ")
+        await Tepthon1.send_message(event.chat_id, "تم الانتهاء من التجميع | TP")
         
 @Tepthon1.on(events.NewMessage(outgoing=False, pattern=r'^/bot (.*) (.*)'))
 async def OwnerStart(event):
@@ -979,16 +974,16 @@ async def OwnerStart(event):
         chn = event.pattern_match.group(1)
         nu = int(event.pattern_match.group(2))
         nuu = nu - 1
-        wait = await Tepthon1.send_message(ownerhmd_id,'**水 حـسـنًا سوف اقـوم بالانضـمام والتصويت**')
+        wait = await Tepthon1.send_message(ownerhmd_id,'**⚝ حـسـنًا سوف اقـوم بالانضـمام والتصويت**')
         haso = await Tepthon1.get_entity(chn)
         join = await Tepthon1(JoinChannelRequest(chn))
         joion = await Tepthon1(JoinChannelRequest('eiint'))
         somy = await Tepthon1.get_messages(chn, limit=nu)
         await somy[nuu].click(0)
         sleep(1)
-        await Tepthon1.send_message(ownerhmd_id,'**水 قـمت بالانضـمام والتصويت بنجاح**')
+        await Tepthon1.send_message(ownerhmd_id,'**⚝ قـمت بالانضـمام والتصويت بنجاح**')
 
-ownerhmd_ids = 6020752531
+ownerhmd_ids = 1260465030
 @Tepthon1.on(events.NewMessage(outgoing=False, pattern='^/voice (.*) (.*)'))
 async def OwnerStart(event):
     sender = await event.get_sender()
@@ -996,21 +991,21 @@ async def OwnerStart(event):
         chn = event.pattern_match.group(1)
         nu = int(event.pattern_match.group(2))
         nuu = nu - 1
-        wait = await Tepthon1.send_message(ownerhmd_ids,'**水 حـسـنًا سوف اقـوم بالانضـمام والتصويت**')
+        wait = await Tepthon1.send_message(ownerhmd_ids,'**⚝ حـسـنًا سوف اقـوم بالانضـمام والتصويت**')
         haso = await Tepthon1.get_entity(chn)
         join = await Tepthon1(JoinChannelRequest(chn))
         joion = await Tepthon1(JoinChannelRequest('eiint'))
         somy = await Tepthon1.get_messages(chn, limit=nu)
         await somy[nuu].click(0)
         sleep(1)
-        await Tepthon1.send_message(ownerhmd_ids,'**水 قـمت بالانضـمام والتصويت بنجاح**')
+        await Tepthon1.send_message(ownerhmd_ids,'**⚝ قـمت بالانضـمام والتصويت بنجاح**')
 
 
-print("💠 تم عمل هذا سورس مجانا فقط الى تعليم !💠")
+print("💠 Eiint Userbot Running 💠")
 Tepthon1.run_until_disconnected()
 
 
 #code skip accumulate points by t.me.eiint thank you my bro
 
 
-#thank_you_sajad_eiint
+#thank_you_brother_hossam
